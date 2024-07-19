@@ -1,12 +1,5 @@
 #!/bin/bash
 
-while getopts f: flag
-do
-    case "${flag}" in
-        f) python_script=${OPTARG};;
-    esac
-done
-
 # set the threshold (80%)
 threshold=80
 

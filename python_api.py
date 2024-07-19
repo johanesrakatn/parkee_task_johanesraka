@@ -30,4 +30,4 @@ df = df[["name", "web_pages", "country", "domains", "state-province"]]
 df.columns = ["Name", "Web pages", "Country", "Domains", "State Province"]
 
 # Print the resulting DataFrame
-print(df.head())
+print(df.head().to_string(index=False))

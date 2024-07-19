@@ -11,9 +11,9 @@ done
 
 #if key is provided, use key
 if [ -n "$key" ]; then
-  scp -i $key $file ${username}@${dest_ip}:~
+  scp -i $key -r $file ${username}@${dest_ip}:~
   exit 0
 fi
 
 # Copy the file using scp
-scp $file ${username}@${dest_ip}:~
+scp -r $file ${username}@${dest_ip}:~
